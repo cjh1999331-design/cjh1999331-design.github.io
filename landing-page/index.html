@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lumen Studio · Interior Design</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:Inter,system-ui,sans-serif;color:#1c1c1c;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}nav b{font-size:20px;letter-spacing:.5px}
+nav ul{display:flex;gap:28px;list-style:none;font-size:15px}.btn{background:#c2703d;color:#fff;padding:12px 26px;border-radius:999px;font-weight:600;display:inline-block}
+.hero{background:linear-gradient(120deg,#f6efe7,#efe2d3);padding:90px 0}.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero h1{font-size:52px;line-height:1.1;margin-bottom:20px}.hero p{font-size:18px;color:#555;margin-bottom:32px}
+.art{height:380px;border-radius:24px;background:url(hero.jpg) center/cover;box-shadow:0 30px 60px rgba(0,0,0,.15)}
+section{padding:80px 0}h2{font-size:34px;text-align:center;margin-bottom:12px}.sub{text-align:center;color:#666;margin-bottom:48px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.card{padding:32px;border-radius:18px;background:#fff;border:1px solid #eee}
+.card h3{margin:14px 0 8px}.ico{width:44px;height:44px;border-radius:12px;background:#f6efe7;display:grid;place-items:center;font-size:22px}
+.quote{background:#1c1c1c;color:#f6efe7;text-align:center}.quote p{font-size:24px;max-width:760px;margin:0 auto 16px;font-style:italic}
+form{max-width:520px;margin:0 auto;display:grid;gap:14px}input,textarea{padding:14px;border:1px solid #ddd;border-radius:10px;font:inherit}
+footer{text-align:center;padding:28px;color:#888;font-size:14px;border-top:1px solid #eee}
+@media(max-width:800px){.hero .wrap,.grid{grid-template-columns:1fr}.hero h1{font-size:38px}nav ul{display:none}}
+</style></head><body>
+<div class="wrap"><nav><b>LUMEN STUDIO</b><ul><li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul><a class="btn" href="#contact">Book a call</a></nav></div>
+<header class="hero"><div class="wrap"><div><h1>Spaces that feel like you.</h1><p>Interior design for homes and boutique offices, from first sketch to final styling.</p><a class="btn" href="#contact">Get a free consultation</a></div><div class="art"></div></div></header>
+<section id="services"><div class="wrap"><h2>What we do</h2><p class="sub">Three ways to work with us.</p><div class="grid">
+<div class="card"><div class="ico">✏️</div><h3>Full design</h3><p>Concept, floor plans, materials, and project management end to end.</p></div>
+<div class="card"><div class="ico">🛋️</div><h3>Room refresh</h3><p>A focused makeover for one room, delivered in about four weeks.</p></div>
+<div class="card"><div class="ico">💡</div><h3>Consultation</h3><p>A two-hour session with a clear action plan you can follow yourself.</p></div>
+</div></div></section>
+<section class="quote" id="about"><div class="wrap"><p>"Sample testimonial text goes here, showing how client reviews are presented."</p><span>Example client</span></div></section>
+<section id="contact"><div class="wrap"><h2>Let's talk</h2><p class="sub">Tell us about your space.</p>
+<form onsubmit="event.preventDefault();this.innerHTML='<p style=text-align:center>Thanks! We will be in touch.</p>'"><input placeholder="Name" required><input type="email" placeholder="Email" required><textarea rows="4" placeholder="Your project"></textarea><button class="btn" style="border:0;cursor:pointer">Send</button></form></div></section>
+<footer>Lumen Studio is a fictional brand created as a portfolio demo.</footer>
+</body></html>
